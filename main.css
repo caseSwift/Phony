@@ -1,50 +1,74 @@
+/*FONTS*/
 
-.navbar{
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'DM Serif Display', serif;
+}
+
+p, span, em, b, i, li, a {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 62px !important;
+    line-height: 72px;
+}
+
+.navbar {
     opacity: 0.7;
 }
 
-.navbar-nav li a{
+.navbar-nav li a {
     font-weight: bold;
 }
 
-.navbar-brand{
+.navbar-brand {
     font-weight: bold;
-    text-align:center;
+    text-align: center;
 }
+
+.navbar-brand .logo {
+    color: #282a1e;
+}
+
+.navbar-brand .logo:hover {
+    color: #78805c;
+}
+
 
 .navbar-nav li a:hover {
-    color: #0d6efd !important;
-    
+    color: #78805c !important;
+
 }
 
-.header-1{
-    text-align:left;
+.header-1 {
+    text-align: left;
     font-size: 6rem;
     color: #000000;
 }
 
-.header-2{
+.header-2 {
     text-align: center;
     font-size: 6rem;
     color: #000000;
     margin-left: 20px;
 }
 
-.header-3{
+.header-3 {
     text-align: right;
     font-size: 6rem;
     color: #000000;
     margin-left: 90px;
 }
 
-.section_divider{
+.section_divider {
     margin-top: 20px;
     margin-bottom: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center !important;
 }
-
 
 
 .page-header {
@@ -54,38 +78,45 @@
 }
 
 
-.contact-form{
+.contact-form {
     margin-top: 5%;
     padding-top: 5%;
     padding-bottom: 5%;
     width: 70%;
-    border-style:solid;
+    border-style: solid;
 }
-.contact-form .form-control{
-    border-radius:1rem;
+
+.contact-form .form-control {
+    border-radius: 1rem;
 }
-.contact-image{
+
+.contact-image {
     text-align: center;
 }
-.contact-image img{
+
+.contact-image img {
     border-radius: 6rem;
     width: 11%;
     margin-top: -18%;
     transform: rotate(29deg);
     border-style: solid;
 }
-.contact-form form{
+
+.contact-form form {
     padding: 14%;
 }
-.contact-form form .row{
+
+.contact-form form .row {
     margin-bottom: -7%;
 }
-.contact-form h3{
+
+.contact-form h3 {
     margin-bottom: 8%;
     margin-top: -10%;
     text-align: center;
     color: #0062cc;
 }
+
 .contact-form .btnContact {
     width: 50%;
     border: none;
@@ -96,8 +127,8 @@
     color: #fff;
     cursor: pointer;
 }
-.btnContactSubmit
-{
+
+.btnContactSubmit {
     width: 50%;
     border-radius: 1rem;
     padding: 1.5%;
@@ -106,7 +137,8 @@
     border: none;
     cursor: pointer;
 }
-.form-group{
+
+.form-group {
     margin: 5%;
 }
 
@@ -115,11 +147,13 @@
     background: #f4f4f4;
     padding: 0;
 }
+
 .accordion-section .panel-default .panel-title a {
     display: block;
     font-style: italic;
     font-size: 1.5rem;
 }
+
 .accordion-section .panel-default .panel-title a:after {
     font-family: 'FontAwesome';
     font-style: normal;
@@ -129,9 +163,11 @@
     float: right;
     margin-top: -12px;
 }
+
 .accordion-section .panel-default .panel-title a.collapsed:after {
     content: "\f107";
 }
+
 .accordion-section .panel-default .panel-body {
     font-size: 1.2rem;
 }
@@ -148,14 +184,22 @@
     transform: translateY(8px);
 }
 
-#featured_cars{
+#featured_cars {
     margin: 5%;
 }
+
+
+.card .card-body .card-img-top {
+    max-height: 350px;
+    height: 100%;
+}
+
 
 .section_padding_130 {
     padding-top: 130px;
     padding-bottom: 130px;
 }
+
 .faq_area {
     position: relative;
     z-index: 1;
@@ -166,19 +210,23 @@
     position: relative;
     z-index: 1;
 }
+
 .faq-accordian .card {
     position: relative;
     z-index: 1;
     margin-bottom: 1.5rem;
 }
+
 .faq-accordian .card:last-child {
     margin-bottom: 0;
 }
+
 .faq-accordian .card .card-header {
     background-color: #ffffff;
     padding: 0;
     border-bottom-color: #ebebeb;
 }
+
 .faq-accordian .card .card-header h6 {
     cursor: pointer;
     padding: 1.75rem 2rem;
@@ -194,19 +242,24 @@
     -ms-flex-pack: justify;
     justify-content: space-between;
 }
+
 .faq-accordian .card .card-header h6 span {
     font-size: 1.5rem;
 }
+
 .faq-accordian .card .card-header h6.collapsed {
     color: #070a57;
 }
+
 .faq-accordian .card .card-header h6.collapsed span {
     -webkit-transform: rotate(-180deg);
     transform: rotate(-180deg);
 }
+
 .faq-accordian .card .card-body {
     padding: 1.75rem 2rem;
 }
+
 .faq-accordian .card .card-body p:last-child {
     margin-bottom: 0;
 }
@@ -221,6 +274,7 @@
     color: #3f43fd;
     font-size: 1.25rem;
 }
+
 @media only screen and (max-width: 575px) {
     .support-button i {
         font-size: 1rem;
@@ -231,17 +285,25 @@
     text-transform: capitalize;
     color: #2ecc71;
 }
+
 @media only screen and (max-width: 575px) {
     .support-button a {
         font-size: 13px;
     }
 }
 
-i{
-    padding:5px;
+i {
+    padding: 5px;
     color: black;
 }
-.about{
-    width:50%;
+
+.about {
+    width: 50%;
     justify-content: center;
+}
+
+
+#phones-on-sale .card .card-body .card-img-top {
+    min-height: 350px;
+    height: 100%;
 }

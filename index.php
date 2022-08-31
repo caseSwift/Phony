@@ -46,7 +46,7 @@ session_start();
     <!-- Section Divider 2-->
     <div class="jumbotron jumbotron-fluid section_divider" id="featured_phones">
       <div class="container-fluid">
-        <h1 class="title display-4 justify-content-end">Featured Phones</h1>
+        <h2 class="title display-4 justify-content-end">Featured Phones</h2>
       </div>
     </div>
     
@@ -57,7 +57,7 @@ session_start();
     <!-- Section Divider-->
 <div class="jumbotron jumbotron-fluid section_divider" id="faqs">
   <div class="container-fluid">
-    <h1 class="title display-4 justify-content-end">FAQs</h1>
+    <h2 class="title display-4 justify-content-end">FAQs</h2>
     </div>
     </div>
 
